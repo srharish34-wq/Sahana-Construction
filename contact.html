@@ -53,8 +53,6 @@
   <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
-  <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
       <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
     <i class="fab fa-facebook-f"></i>
   </a>
@@ -109,60 +107,70 @@
 
     <!-- RIGHT FORM -->
     <div class="consult-form-box">
-      <h3>Download Our Quote Now</h3>
-      <span class="form-underline"></span>
+  <h3>Download Our Quote Now</h3>
+  <span class="form-underline"></span>
 
-      <form class="consult-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text">
-          </div>
-          <div class="form-group">
-            <label>Mobile Number</label>
-            <input type="text">
-          </div>
-        </div>
+  <form class="consult-form"
+        action="https://formsubmit.co/YOUR-EMAIL@gmail.com"
+        method="POST">
 
-        <div class="form-row">
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email">
-          </div>
-          <div class="form-group">
-            <label>Location</label>
-            <input type="text">
-          </div>
-        </div>
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <div class="form-row">
-          <div class="form-group">
-            <label>Plot Area (sq.ft)</label>
-            <select>
-              <option>Ground Floor</option>
-      <option>G + 1</option>
-      <option>G + 2</option>
-      <option>G + 3</option>
-      <option>G + 4</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Your Proposal</label>
-            <select>
-                <option>0 To 500 sq ft</option>
-    <option>500 To 1000 sq ft</option>
-    <option>1000 To 1500 sq ft</option>
-    <option>1500 To 2000 sq ft</option>
-    <option>2000+ sq ft</option>
-            </select>
-          </div>
-        </div>
+    <!-- Redirect After Submit (Optional) -->
+    <input type="hidden" name="_next" value="https://www.sahanaconstructions.in/thankyou.html">
 
-        <button type="submit" class="submit-btn">Send</button>
-      </form>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+      </div>
     </div>
 
-  </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" name="location" placeholder="Enter your location" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Floor Type</label>
+        <select name="floor" required>
+          <option value="">Select Floor Type</option>
+          <option>Ground Floor</option>
+          <option>G + 1</option>
+          <option>G + 2</option>
+          <option>G + 3</option>
+          <option>G + 4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Plot Area (sq.ft)</label>
+        <select name="area" required>
+          <option value="">Select Plot Area</option>
+          <option>0 To 500 sq ft</option>
+          <option>500 To 1000 sq ft</option>
+          <option>1000 To 1500 sq ft</option>
+          <option>1500 To 2000 sq ft</option>
+          <option>2000+ sq ft</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Send</button>
+  </form>
+</div>
 </section>
 <!-- <-- Floating button --> 
 
